@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-	private static String linkDB = "jdbc:mysql://localhost/db_users";
-	private static String userDB = "root";
-	private static String pswDB = "JairS218";
+	private static String linkDB = "jdbc:mysql://localhost/db_users";//Verificar caminho para o BD
+	private static String userDB = "";// Adicionar nome do usuario do mysql
+	private static String pswDB = "";// Adicionar senha se houver
 	
 	public static Connection getConnection() throws SQLException {
 		try {

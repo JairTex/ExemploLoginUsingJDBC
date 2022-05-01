@@ -1,6 +1,5 @@
 package view;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -16,7 +15,6 @@ import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
-import java.awt.SystemColor;
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -106,6 +104,10 @@ public class TelaLogIn extends JFrame {
 					
 					stmt.close();
 					con.close();
+					TelaCadastro telaCadastro = new TelaCadastro();
+					telaCadastro.setVisible(true);
+
+					setVisible(false);
 					
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
